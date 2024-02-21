@@ -12,6 +12,7 @@ export default function vanillaCalendarPicker({
     jumpMonths,
     date,
     settings,
+    locale,
 })  {
         return {
             state,
@@ -29,6 +30,7 @@ export default function vanillaCalendarPicker({
                     jumpMonths: jumpMonths,
                     date: date,
                     settings: settings,
+                    locale: locale,
                     input: true,
                     actions: {
                         changeToInput: (event, calendar, self) => {

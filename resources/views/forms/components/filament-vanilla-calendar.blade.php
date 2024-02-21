@@ -13,6 +13,8 @@
     $getMaxValue = $getMaxValue();
     $getMinDate = $getMinDate();
     $getMinValue = $getMinValue();
+    $getLocaleMonths = $getLocaleMonths();
+    $getLocaleWeekday = $getLocaleWeekday();
     $getToday = $getToday();
     $getSelectedTime = $getSelectedTime();
     $isPrefixInline = $isPrefixInline();
@@ -61,6 +63,7 @@
              jumpMonths: @js($getJumpMonths()),
              date: { min: @js($getMinDate), max: @js($getMaxDate), today: new Date(@js($getToday)) },
              settings: @js($getSettings()),
+             locale: { months: @js($getLocaleMonths), weekday: @js($getLocaleWeekday) },
          })"
     >
         <x-filament::input.wrapper

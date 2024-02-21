@@ -30,7 +30,11 @@ class VanillaCalendarPicker extends TextInput
 
     protected array $settings = [];
 
-    protected function setUp(): void
+    protected array $localeMonths = [];
+
+    protected array $localeWeekday = [];
+
+    protected function setUp() : void
     {
         parent::setUp();
 
@@ -133,5 +137,29 @@ class VanillaCalendarPicker extends TextInput
         return array_merge($this->settings, [
             'visibility' => ['positionToInput' => 'center'],
         ]);
+    }
+
+    public function localeMonths(array $months): static
+    {
+        $this->localeMonths = $months;
+
+        return $this;
+    }
+
+    public function getLocaleMonths(): array
+    {
+        return $this->localeMonths;
+    }
+
+    public function localeWeekday(array $weekday): static
+    {
+        $this->localeWeekday = $weekday;
+
+        return $this;
+    }
+
+    public function getLocaleWeekday(): array
+    {
+        return $this->localeWeekday;
     }
 }
