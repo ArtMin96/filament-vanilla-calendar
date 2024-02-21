@@ -34,7 +34,7 @@ class VanillaCalendarPicker extends TextInput
 
     protected array $localeWeekday = [];
 
-    protected function setUp() : void
+    protected function setUp(): void
     {
         parent::setUp();
 
