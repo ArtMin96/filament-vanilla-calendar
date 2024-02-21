@@ -1,0 +1,11 @@
+@import '../../vendor/filament/filament/resources/css/theme.css';
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_selected, [data-calendar-theme=light] .vanilla-calendar-day__btn_selected:hover {
+    --c-500: var(--primary-500);
+    --c-600: var(--primary-600);
+    background-color:rgba(var(--c-600),var(--tw-bg-opacity))
+}
+
+.ggaaaaaa {
+    @apply bg-black;
+}
