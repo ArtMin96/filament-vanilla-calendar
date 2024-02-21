@@ -2,9 +2,9 @@
 
 namespace ArtMin96\FilamentVanillaCalendar\Tests;
 
+use ArtMin96\FilamentVanillaCalendar\FilamentVanillaCalendarServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use ArtMin96\FilamentVanillaCalendar\FilamentVanillaCalendarServiceProvider;
 
 class TestCase extends Orchestra
 {

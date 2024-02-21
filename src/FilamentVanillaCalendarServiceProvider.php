@@ -35,8 +35,8 @@ class FilamentVanillaCalendarServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            Css::make('filament-vanilla-calendar-style', __DIR__ . '/../resources/dist/filament-vanilla-calendar.css'),
-            AlpineComponent::make('filament-vanilla-calendar', __DIR__ . '/../resources/dist/filament-vanilla-calendar.js'),
+            Css::make('filament-vanilla-calendar-style', __DIR__.'/../resources/dist/filament-vanilla-calendar.css'),
+            AlpineComponent::make('filament-vanilla-calendar', __DIR__.'/../resources/dist/filament-vanilla-calendar.js'),
         ];
     }
 }
